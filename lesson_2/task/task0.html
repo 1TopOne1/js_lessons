@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 0</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h3>Задача 0</h3>
+	<h4>Обчислити значення виразів</h4>
+	<ol>
+		<li>S1 = a + 12 + b</li>
+		<li>S2 = Math.sqrt((a+b)/(2*a))</li>
+		<li>S3 = Math.cbrt(a + b)/c</li>
+		<li>S4 = Math.sin(a/-b)</li>
+	</ol>
+
+	<script>
+		
+	//   ЗАДАЧА 0   
+
+//1. Введення необхідних даних
+
+let a = parseFloat(prompt('Введіть значення числа a','0'))
+let b = parseFloat(prompt('Введіть значення числа b','0'))
+let c = parseFloat(prompt('Введіть значення числа c','0'))
+//2. Обчислення результату
+ let s1 = a + 12 + b
+ let s2 = Math.sqrt((a+b)/(2*a))
+ let s3 = Math.cbrt((a+b)/c)
+ let s4 = Math.sin(a/-b)
+//3. Виведення результату
+document.write (`	<p>Результати:</p>
+						<p>s1 = ${s1}<br></p>
+						<p>s2 = ${s2}<br></p>
+						<p>s3 = ${s3}<br></p>
+						<p>s4 = ${s4}<br></p>`)
+
+
+
+	</script>
+</body>
+</html>
