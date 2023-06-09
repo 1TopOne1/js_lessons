@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 1</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h3>Задача 1</h3>
+
+	<h4>З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.</h4>
+
+	<script>
+	// ЗАДАЧА 1
+// З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.
+
+//1. Введення необхідних даних
+		let firsChildName = (prompt('Введіть ім"я першої дитини'))
+		let amountSweetsFirstChild = (prompt('Введіть кількість цукерок у першої дитини')) 
+		let secondChildName = (prompt('Введіть ім"я другої дитини'))
+		let amountSweetsSecondChild = (prompt('Введіть кількість цукерок у другої дитини')) 
+
+//2.Обчислення результату
+		if(amountSweetsFirstChild > amountSweetsSecondChild)
+			 alert(`Цукерок більше у дитини по імені: ${firsChildName}`)
+			 else if (amountSweetsSecondChild > amountSweetsFirstChild)
+			 alert(`Цукерок більше у дитини по імені: ${secondChildName}`)
+			 else if (amountSweetsSecondChild === amountSweetsFirstChild)
+			 alert('Цукерок у дітей однаково')
+//3. Виведення результату
+
+	</script>
+</body>
+</html>
