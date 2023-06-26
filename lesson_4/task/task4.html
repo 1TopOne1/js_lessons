@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 4</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 4</h3>
+    <h4>
+      Вивести з використанням циклів маркований список з випадковими числами
+      (1-100). Кількість випадкових чисел вводиться користувачем.
+    </h4>
+
+    <script>
+      //   ЗАДАЧА 4
+      //Вивести з використанням циклів маркований список з випадковими числами (1-100). Кількість випадкових чисел вводиться користувачем.
+
+      //1. Введення необхідних даних
+		
+      let minNumber = 1;
+      let maxNumber = 100;
+      let amountRandomNumber = parseInt(
+        prompt("Введіть кількість випадкових чисел", "0")
+      );
+
+      //2. Обчислення результату
+      document.write(`<ul>`);
+
+      for (let i = 0; i < amountRandomNumber; i++) {
+        const randNum =
+          minNumber + Math.floor(Math.random() * (maxNumber - minNumber + 1));
+
+        document.write(`<li>${randNum}</li>`);
+      }
+      //3. Виведення результату
+      document.write(`</ul>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача -1</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача -1</h3>
+    <h4>Вивести на екран номери місяців весни і літа (від 3 до 8)</h4>
+
+    <script>
+      // Задача -1
+      //  Вивести на екран номери місяців весни і літа (від 3 до 8)
+
+      //1. Введення необхідних даних
+
+      let nameMonth = "";
+      //2.Обчислення результату
+      for (let numberMonth = 3; numberMonth <= 8; numberMonth++) {
+        let thisMonth = numberMonth;
+        switch (thisMonth) {
+          case 3:
+            nameMonth += ` ${thisMonth} - Березень <br>`;
+            break;
+          case 4:
+            nameMonth += ` ${thisMonth} - Квітень <br>`;
+            break;
+          case 5:
+            nameMonth += ` ${thisMonth} - Травень <br>`;
+            break;
+          case 6:
+            nameMonth += ` ${thisMonth} - Червень <br>`;
+            break;
+          case 7:
+            nameMonth += ` ${thisMonth} - Липень <br>`;
+            break;
+          case 8:
+            nameMonth += ` ${thisMonth} - Серпень <br>`;
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      //3. Виведення результату
+      document.write(nameMonth);
+    </script>
+  </body>
+</html>
