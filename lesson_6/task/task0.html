@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 0</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 0</h3>
+
+    <h4>
+      0. Вивести на екран
+      <br />
+      A B C D E
+      <br />
+      B C D E F
+      <br />
+      C D E F G
+      <br />
+      D E F G H
+      <br />
+      E F G H I
+    </h4>
+    <script>
+      // Задача 0
+      // 0. Вивести на екран
+      // A B C D E
+      // B C D E F
+      // C D E F G
+      // D E F G H
+      // E F G H I
+      let letter;
+
+      for (let columnNum = 0; columnNum < 5; columnNum++) {
+        for (let rowNum = 0; rowNum < 5; rowNum++) {
+          document.write(`${String.fromCharCode(65 + columnNum + rowNum)}`);
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

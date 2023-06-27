@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 5</h3>
+    <h4>
+      5. Інвестор вклав S тис. грн на 20 років під 20% річних. Визначити за
+      допомогою циклів суму, яку він одержить (без оподаткування).
+    </h4>
+
+    <script>
+      // Задача 5
+      //  5. Інвестор вклав S тис. грн на 20 років під 20% річних. Визначити за допомогою циклів суму, яку він одержить (без оподаткування).
+
+      //1. Введення необхідних даних
+      let userMoney = parseFloat(
+        prompt(
+          "Введіть суму яку ви хочете вкласти на 20 років під 20% річних"
+          
+        )
+      );
+      const percent = 20;
+      for (let i = 0; i < 20; i++) {
+        userMoney += userMoney * percent / 100;
+        
+      }
+		document.write(`<p>Cуму, яку ви одержите (без оподаткування) - ${userMoney.toFixed(2)}<p>`)
+      //2.Обчислення результату
+
+      //3. Виведення результату
+    </script>
+  </body>
+</html>

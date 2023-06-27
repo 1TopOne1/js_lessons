@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 7</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 7</h3>
+		<h4>
+      7. Інвестор вклав S тис. грн на 20 років під 20% річних, а потім на 17 років під 27% річних. Визначити за допомогою циклів суму, яку він одержить.
+
+		</h4>
+
+    <script>
+      //   ЗАДАЧА 7
+      //7. Інвестор вклав S тис. грн на 20 років під 20% річних, а потім на 17 років під 27% річних. Визначити за допомогою циклів суму, яку він одержить.
+
+      //1. Введення необхідних даних
+      let userMoney = parseFloat(
+        prompt("Введіть суму яку ви хочете вкласти на 20 років під 20% річних")
+      );
+      const percentTwenty = 20;
+      const percentTwentySeven = 27;
+      let firstSum = 0;
+      let secondSum = 0;  
+		
+		//2. Обчислення результату
+
+      for (let i = 0; i < 20; i++) {
+        firstSum += userMoney * percentTwenty / 100;
+      }
+      let firstUserMoney = userMoney + firstSum;
+
+      for (let c = 0; c < 17; c++) {
+        secondSum += firstUserMoney * percentTwentySeven / 100;
+      }
+      let secondUserMoney = firstUserMoney + secondSum; 
+		
+		//3. Виведення результату
+      document.write(`<p>Cуму, яку ви одержите  - ${secondUserMoney.toFixed(2)}<p>`);
+
+    
+
+     
+    </script>
+  </body>
+</html>
