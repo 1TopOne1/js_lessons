@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 4</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 4</h3>
+    <h4>
+      4. Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька
+      результатів: кількість парних, кількість додатних, кількість більших за
+      100.
+    </h4>
+
+    <script>
+      //   ЗАДАЧА 4
+      //4. Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: кількість парних, кількість додатних, кількість більших за 100.
+
+      //1. Введення необхідних даних
+      let num1 = parseFloat(prompt(`Введіть перше число`));
+      let num2 = parseFloat(prompt(`Введіть друге число`));
+      let num3 = parseFloat(prompt(`Введіть третє число`));
+      //========================================================================================================================================================
+      //2. Обчислення результату
+
+      function getEvenNum(num1, num2, num3) {
+        let amountEvenNumbers = 0;
+        num1 % 2 === 0 ? amountEvenNumbers++ : null;
+        num2 % 2 === 0 ? amountEvenNumbers++ : null;
+        num3 % 2 === 0 ? amountEvenNumbers++ : null;
+
+        return amountEvenNumbers;
+      }
+      let amountEvenNumbers = getEvenNum(num1, num2, num3);
+      //========================================================================================================================================================
+      //2. Обчислення результату
+
+      function getPositiveNum(num1, num2, num3) {
+        let amountPositiveNumbers = 0;
+        num1 > 0 ? amountPositiveNumbers++ : null;
+        num2 > 0 ? amountPositiveNumbers++ : null;
+        num3 > 0 ? amountPositiveNumbers++ : null;
+
+        return amountPositiveNumbers;
+      }
+      let amountPositiveNumbers = getPositiveNum(num1, num2, num3);
+
+      //========================================================================================================================================================
+      //2. Обчислення результату
+
+      function getGreaterNum(num1, num2, num3) {
+        let amountGreaterThan100 = 0;
+        num1 > 100 ? amountGreaterThan100++ : null;
+        num2 > 100 ? amountGreaterThan100++ : null;
+        num3 > 100 ? amountGreaterThan100++ : null;
+
+        return amountGreaterThan100;
+      }
+      let amountGreaterThan100 = getGreaterNum(num1, num2, num3);
+
+      //========================================================================================================================================================
+      //3. Виведення результату
+
+      document.write(
+        `<p> Кількість парних = ${amountEvenNumbers}, Кількість додатніх = ${amountPositiveNumbers}, Кількість > за 100 = ${amountGreaterThan100}</p>`
+      );
+    </script>
+  </body>
+</html>
