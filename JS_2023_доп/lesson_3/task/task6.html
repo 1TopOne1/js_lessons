@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 6</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h3>Задача 6</h3>
+	<p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</p>
+
+	<script>
+	//   ЗАДАЧА 6  
+	//З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+
+		//1. Введення необхідних даних
+		let numberOfTheWeek = parseInt(prompt('Введіть номер тижня(1-7)','0'))
+
+		//2. Обчислення результату
+		let result
+		switch (numberOfTheWeek) {
+			case 1:
+				res = 'Понеділок'
+				break;
+				case 2:
+				res = 'Вівторок'
+				break;
+				case 3:
+				res = 'Середа'
+				break;
+				case 4:
+				res = 'Четверг'
+				break;
+				case 5:
+				res = 'П"ятниця'
+				break;
+				case 6:
+				res = 'Субота'
+				break;
+				case 7:
+				res = 'Неділя'
+				break;
+		
+			default:
+				res = 'Такого дня немає, у тижні 7 днів'
+				break;
+		}
+		//3. Виведення результату
+		alert(res)
+		
+	</script>
+</body>
+</html>

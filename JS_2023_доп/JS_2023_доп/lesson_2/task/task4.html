@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 4</h3>
+    <h4>
+      З клавіатури вводиться вік дитини. Вивести на екран через скільки років
+      вона буде відвідувати садочок, піде у школу, закінчить школу, вступить і
+      закінчить
+    </h4>
+
+    <script>
+      // //   ЗАДАЧА 4
+
+      // 	//1. Введення необхідних даних
+      // 	let lengthInCentimeters = parseFloat(prompt("Введіть довжину у сантиметрах", '0'))
+
+      // 	//2. Обчислення результату
+      // 	let lengthInMeters = lengthInCentimeters / 100
+      // 	let lengthInKilometrs = lengthInCentimeters / 100000
+
+      // 	//3. Виведення результату
+      // 	document.write(`<p> Метри: ${lengthInMeters}</p>
+      // 	<p> Кілометри: ${lengthInKilometrs}</p>`)
+
+      //========================================================================================================================================================
+      //========================================================================================================================================================
+      //========================================================================================================================================================
+      // Задача 4
+      // 4.	З клавіатури вводиться вік дитини (від 1 до 3 років). Вивести на екран через скільки років вона буде відвідувати садочок, піде у школу, закінчить школу, вступить і закінчить
+      // 1. Вводимо необхідні дані
+      let childYears = parseFloat(
+        prompt("Введіть вік дитини (від 1 до 3 років)")
+      );
+      let kindergarten = 3,
+        school = 6,
+        finishSchool = 17,
+        startUniversity = 18,
+        finishUniversity = 23;
+      // 2. Обчислення результату
+      let kindergartenYears = kindergarten - childYears;
+      let schoolYears = school - childYears;
+      let finishSchoolYears = finishSchool - childYears;
+      let startUniversityYears = startUniversity - childYears;
+      let finishUniversityYear = finishUniversity - childYears;
+
+      // 3. Виводимо результат
+      document.write(`<p>
+		Через ${kindergartenYears} років ваша дитина відвідає садочок <br>
+		Через ${schoolYears} років ваша дитина відвідає школу <br>
+		Через ${finishSchoolYears} років ваша дитина закінчить школу <br>
+		Через ${startUniversityYears} років ваша дитина вступить в університет <br>
+		Через ${finishUniversityYear} років ваша дитина закінчить університет 
+		</p>`);
+    </script>
+  </body>
+</html>

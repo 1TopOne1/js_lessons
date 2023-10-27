@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 3</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h3>Задача 3</h3>
+	<h4>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.</h4>
+
+	<script>
+	// ЗАДАЧА 3
+// Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+
+//1. Введення необхідних даних
+let min = 1, max = 5
+let randomNumber = min + Math.floor(Math.random()*(max-min+1))
+ let enterNumber = parseInt(prompt('Вгадайте число від 1 до 5 (у вас залишилось 2 спроби)','0'))
+
+
+//2.Обчислення результату
+		if(enterNumber === randomNumber) {
+			document.write (`<p>Ви вгадали число, це число ${enterNumber}</p>`);
+	}else {
+		let enterSecondNumber = parseInt(prompt('Ви не вгадали! (У вас залишилась 1 спроба)','0'))
+
+		if(enterSecondNumber === randomNumber) {
+			document.write (`<p>Ви вгадали число, це число ${enterNumber}</p>`)
+	} else{
+		document.write (`<p>Числa ${enterNumber} та ${enterSecondNumber} не вірні! Випадкове число - ${randomNumber}</p>`)
+	}
+}
+	
+	
+//3. Виведення результату
+
+
+	</script>
+</body>
+</html>

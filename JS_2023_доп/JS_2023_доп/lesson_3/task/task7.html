@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 7</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h3>Задача 7</h3>
+	<p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</p>
+
+	<script>
+	//   ЗАДАЧА 07 
+
+	//З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+
+		//1. Введення необхідних даних
+		let numberOfTheMonth = parseInt(prompt('Введіть номер місяця(1-12)','0'))
+
+		//2. Обчислення результату
+		let result
+		switch (numberOfTheMonth) {
+			case 1:
+			case 2:
+			case 12:
+				res = 'Зима'
+				break;
+			
+			case 3:
+			case 4:
+			case 5:
+				res = 'Весна'
+				break;
+
+			case 6:
+			case 7:
+			case 8:
+				res = 'Літо'
+				break;
+			case 9:
+			case 10:
+			case 11:
+				res = 'Осінь'
+				break;
+				
+			default:
+				res = 'Такого місяця немає, у році 12 місяців'
+				break;
+		}
+		//3. Виведення результату
+		alert(res)
+	</script>
+</body>
+</html>
