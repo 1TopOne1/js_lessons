@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Задача 1</title>
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-	<h3>Задача 1</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 1</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h3>Задача 1</h3>
 
-	<h4>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці.</h4>
+    <h4>
+      Дано ширину екрана та кількість елементів, кі повинні бути відображені у
+      рядку. Визначити ширину елементів, які повинні бути відображені у цьому
+      рядку.
+    </h4>
 
-	<script>
-	// ЗАДАЧА 1
-// Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у форті таблиці.
+    <script>
+      // // ЗАДАЧА 1
+      // // Дано ширину екрана та кількість елементів, які повинні бути відображені у рядку. Визначити ширину елементів, які повинні бути відображені у цьому рядку.
 
-//1. Введення необхідних даних
+      // //1. Введення необхідних даних
+      // let screenWidth = parseFloat(prompt("Введіть ширину екрана", "0"));
 
-let a = parseFloat(prompt('Введіть значення числа a','0'))
-let b = parseFloat(prompt('Введіть значення числа b','0'))
+      // let amountElements = parseFloat(
+      //   prompt("Введіть кількість елементів", "0")
+      // );
 
-//2.Обчислення результату
-
-let s1 =  a + b
-let s2 = a * b
-let s3 = a / b
-
-//3. Виведення результату
-
-document.write(`
-<table>
-		<tr>
-			<td> ******************* </td>
-		</tr>
-	<tr>
-		<td><p>Сума</p></td>
-		<td><p>${s1}</p></td>
-	</tr>
-
-	<tr>
-		<td><p>Добуток</p></td>
-		<td><p>${s2}</p></td>
-	</tr>
-
-	<tr>
-		<td><p>Частка</p></td>
-		<td><p>${s3}</p> </td>
-	</tr>
-		</table>
-		`)
-	
-
-
-	</script>
-</body>
+      // //2.Обчислення результату
+      // let widthOneElements = screenWidth / screenWidth;
+      // let widthElements = widthOneElements * amountElements;
+      // //3. Виведення результату
+      // alert(
+      //   `Ширина елементів які повинні бути відображені у рядку = ${widthElements} px`
+      // );
+      //========================================================================================================================================================
+      //========================================================================================================================================================
+      //========================================================================================================================================================
+      //1. Вводимо необхідні дані
+      let screenWidth = parseFloat(prompt("Введіть ширину еркану у px"));
+      let amountElements = parseFloat(prompt("Введіть кількість елементів"));
+      // 2. Обчислення результату
+      let widthOneElements = screenWidth / amountElements;
+      let widthElements = widthOneElements * amountElements;
+      // 3. Виводимо результат
+      document.write(
+        `<p>Ширина одного елементу = ${widthOneElements}<br> Ширина елементів = ${widthElements}</p>`
+      );
+    </script>
+  </body>
 </html>
